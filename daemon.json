@@ -1,0 +1,26 @@
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+  "features": {
+    "buildkit": true
+  },
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "10m",
+    "max-file": "3"
+  },
+  "dns": [
+    "8.8.8.8",
+    "8.8.4.4"
+  ],
+  "hosts": [
+    "tcp://localhost:2375",
+    "npipe:////.//pipe//docker_engine"
+  ],
+  "max-concurrent-downloads": 10,
+  "max-concurrent-uploads": 10
+}
