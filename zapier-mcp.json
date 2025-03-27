@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "zapier-mcp": {
+      "command": "npx",
+      "args": [
+        "@zapier/cli",
+        "mcp",
+        "--port",
+        "9000"
+      ]
+    }
+  },
+  "zapier": {
+    "apiKey": "YOUR_ZAPIER_API_KEY",
+    "endpoints": {
+      "base": "https://api.zapier.com/v2",
+      "webhooks": "https://hooks.zapier.com/hooks/catch"
+    },
+    "auth": {
+      "type": "bearer"
+    },
+    "rateLimit": {
+      "maxRequests": 100,
+      "perTimeWindow": "1m"
+    }
+  }
+}
