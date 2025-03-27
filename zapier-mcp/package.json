@@ -1,0 +1,25 @@
+{
+  "name": "zapier-mcp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "zapier-platform-core": "^12.0.3",
+    "zapier-platform-cli": "^12.0.3"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "zapier": {
+    "port": 9000,
+    "mcp": {
+      "enabled": true,
+      "auth": {
+        "type": "bearer"
+      }
+    }
+  }
+}
